@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>To-Do List</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2 id="todo">TODO</h2>
-    <input type="search" id="search" name="search"><br><br>
+    <div class="wrapper">
 
-    <ul id="list"></ul>
+        <h2 id="todo">TODO</h2>
 
-    <input type="text" id="taskName" name="taskName" required minlength="3" maxlength="255">
-    <input type="date" id="taskDate" name="taskDate">
-    <button type="button" onclick="addElement()">Add</button>
+        <input type="search" id="search" name="search" placeholder="Search for tasks..." onkeyup="search()"><br><br>
+
+        <ul id="list"></ul>
+
+        <input type="text" id="taskName" name="taskName" required minlength="3" maxlength="255">
+        <input type="date" id="taskDate" name="taskDate">
+        <button type="button" onclick="addElement()">Add</button>
+        <button type="button" onclick="clearList()">Clear</button>
+    </div>
 
     <script type="text/javascript" src="script.js"></script>
 </body>
