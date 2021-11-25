@@ -14,15 +14,21 @@
 </head>
 <body>
 
-    <div id="map"></div>
+    <div id="maps">
+        <div id="map"></div>
+        <canvas width="600" height="400" id="puzzleCanvas"></canvas>
+    </div>
 
-    <button id="getLocation">Get Current Location</button>
-    <button id="saveButton">Save Raster Map</button>
-    <br>
+    <div id="buttons">
+        <button id="getLocation">Get Current Location</button>
+        <button id="saveButton">Save Raster Map</button>
+    </div>
 
-    <canvas width="1280" height="110" id="rasterMap1"></canvas>
-    <br>
-    <canvas width="1280" height="110" id="rasterMap2"></canvas>
+    <div id="pieces">
+        <canvas width="1280" height="110" id="rasterMap1"></canvas>
+        <br>
+        <canvas width="1280" height="110" id="rasterMap2"></canvas>
+    </div>
 
     <script src="puzzle_script.js"></script>
 

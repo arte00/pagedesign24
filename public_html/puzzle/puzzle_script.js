@@ -11,7 +11,7 @@ L.tileLayer.provider('Esri.WorldImagery').addTo(map);
 document.getElementById("saveButton").addEventListener("click", function() {
     leafletImage(map, function (err, canvas) {
         mapImage = canvas;
-        draw();
+        cut();
     });
 });
 
@@ -48,10 +48,33 @@ function initializePuzzle(){
 }
 
 function draw(){
+
     for (let i=0; i < 8; i++){
         contexts[i].drawImage(mapImage, i*155+11, 11, 148, 98);
+        // context.drawImage(image, x * widthOfOnePiece, y * heightOfOnePiece, widthOfOnePiece, heightOfOnePiece, 0, 0, canvas.width, canvas.height);
+        // contexts[i].drawImage(mapImage, )
     }
     for (let i=0; i < 8; i++){
         contexts[i+8].drawImage(mapImage, i*155+11, 11, 148, 98);
     }
+}
+
+function cut(){
+    let pieces = [{col: 0, row: 0}, {col: 1, row: 0}, {col: 2, row: 0}, {col: 3, row: 0},
+            {col: 4, row: 0}, {col: 5, row: 0},{col: 6, row: 0}, {col: 7, row: 0},
+            {col: 1, row: 1}, {col: 2, row: 1}, {col: 3, row: 1}, {col: 4, row: 1},
+            {col: 5, row: 1}, {col: 6, row: 1}, {col: 7, row: 1}, {col: 8, row: 1}];
+
+    let g=0;
+    let p=pieces[g];
+    for (let i=0; i < 8; i++){
+        contexts[i].drawImage(mapImage, i*148+11, 11, 148, 98, p.col*148, p.row*98, 148, 98);
+        g++;
+    }
+    for (let i=0; i < 8; i++){
+        contexts[i+8].drawImage(mapImage, i*148+11, 11, 148, 98, p.col*148, p.row*98, 148, 98);
+        g++;
+    }
+    console.log(g);
+
 }
