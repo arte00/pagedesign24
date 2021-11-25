@@ -1,31 +1,34 @@
 #map {
     width: 600px;
-    height: 400px;
+    height: 300px;
     border: 1px solid black;
-    float: left;
-    margin-left: 5%;
 }
 
-#puzzle {
+#target {
+    width: 600px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+#target div {
+    width: 149px;
+    height: 74px;
     border: 1px solid black;
-    float: right;
-    margin-right: 5%;
+}
+
+
+table tr td canvas {
+    width: 149px;
+    height: 74px;
+    border: 1px solid black;
 }
 
 button {
-    float: left;
-}
-#pieces {
-    float: left;
-    margin-top: 16px;
-    margin-left: 2.5%;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
-#buttons {
-    float: left;
-    margin-left: 5%;
-}
-
-button {
-    margin-top: 16px;
+#map_td {
+    alignment: center;
 }
