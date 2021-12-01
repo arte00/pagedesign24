@@ -1,0 +1,31 @@
+.icon {
+    width: 60px;
+    height: auto;
+}
+
+.weather-item {
+    width: 500px;
+    height: auto;
+    border: 1px solid black;
+    padding: 8px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.temperature {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.temperature-div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.city-div {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    horiz-align: right;
+}
