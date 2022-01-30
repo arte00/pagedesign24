@@ -1,31 +1,50 @@
-.icon {
-    width: 60px;
+
+h1 {
+    margin: 25px;
+}
+
+#search {
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.weather-container {
+    position: absolute;
+    width: 350px;
     height: auto;
+    margin: 25px;
 }
 
 .weather-item {
-    width: 500px;
-    height: auto;
+    display: block;
+    width: 350px;
+    height: 120px;
     border: 1px solid black;
-    padding: 8px;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    position: relative;
+    margin: 15px auto;
 }
 
-.temperature {
+.weather-date {
     font-weight: bold;
-    font-size: 28px;
+    text-align: left;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 20px;
 }
 
-.temperature-div {
-    display: inline-block;
-    vertical-align: top;
+.weather-icon {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 100px;
+    height: 100px;
 }
 
-.city-div {
-    width: 50%;
-    display: inline-block;
-    vertical-align: top;
-    horiz-align: right;
+.weather-temperature {
+    position: absolute;
+    top: 50px;
+    left: 120px;
+    font-size: 33px;
+    font-weight: bold;
 }

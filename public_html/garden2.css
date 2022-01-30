@@ -1,0 +1,109 @@
+
+body, html {
+    margin: 0 0 100px;
+    background: url("https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg") fixed;
+    min-height: 100%;
+}
+
+html {
+    font-family: "Lucida Handwriting", "Courier New", monospace;
+}
+
+.banner {
+    background: none;
+    padding: 60px;
+    text-align: center;
+    color: beige;
+    font-size: 30px;
+}
+
+.container {
+    background-color: #dddddd;
+    margin: 3%;
+    padding: 25px;
+}
+
+.footer {
+    background: gray;
+    position: fixed;
+    padding: 10px 10px 0 10px;
+    bottom: 0;
+    left: 0;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer p {
+    color: white;
+}
+
+.list {
+    stop-color: #25272E;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+p {
+    color: slategray;
+}
+
+h2 {
+    color: #863350;
+    margin-top: 22px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    ul li {
+        font-family: "Brush Script MT", "Courier New", monospace;
+        font-size: 30px;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+    ul {
+
+    }
+
+    ul li {
+        margin: 10px;
+        background-color: #cccccc;
+    }
+
+    li a:hover {
+        background-color: darkslategray;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    li {
+        float: left;
+    }
+
+    ul li {
+        font-family: "Brush Script MT", "Courier New", monospace;
+        font-size: 30px;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #cccccc;
+    }
+
+}
