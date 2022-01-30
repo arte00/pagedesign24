@@ -1,0 +1,50 @@
+
+h1 {
+    margin: 25px;
+}
+
+#search {
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.weather-container {
+    position: absolute;
+    width: 350px;
+    height: auto;
+    margin: 25px;
+}
+
+.weather-item {
+    display: block;
+    width: 350px;
+    height: 120px;
+    border: 1px solid black;
+    position: relative;
+    margin: 15px auto;
+}
+
+.weather-date {
+    font-weight: bold;
+    text-align: left;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 20px;
+}
+
+.weather-icon {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.weather-temperature {
+    position: absolute;
+    top: 50px;
+    left: 120px;
+    font-size: 33px;
+    font-weight: bold;
+}
